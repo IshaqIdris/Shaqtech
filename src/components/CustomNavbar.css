@@ -1,0 +1,48 @@
+.rectangle {
+    position: relative;
+    width: Auto;
+    background-color: #ffffff;
+    
+}
+
+.web-header {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+@media (min-width: 320px) {
+    .rectangle {
+        height: 32px;
+        border-bottom: 2px solid rgb(150, 0, 255);
+    }
+
+    .web-header {
+        width: 67px;
+    }
+}
+
+@media (min-width: 768px) {
+    .rectangle {
+        height: 56px;
+        border-bottom: 4px solid rgb(150, 0, 255);
+    }
+
+    .web-header {
+        width: 118px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .rectangle {
+        height: 56px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rectangle {
+        height: 56px;
+    }
+}
