@@ -7,7 +7,7 @@ export default class CustomNavbar extends Component {
     render() {
         return (
             <div>
-                <div class="rectangle">
+                <div className="rectangle">
                     <Image src="assets/weblogo.png" className="web-header"/>
                 </div>
             </div>

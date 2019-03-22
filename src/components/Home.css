@@ -1,0 +1,121 @@
+.home {
+    background: linear-gradient(3deg, #1e0047, #6900ff);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+
+    
+    /* background-attachment: fixed;
+    background-size: 100%;
+    min-height: 100vh; */
+  }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+
+.home .container {
+    padding-left: 0%;
+    margin-left: 0%;
+    padding-right: 0%;
+}
+
+.title-block {
+    /* min-width: 100vw; */
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: unset;
+    z-index: -1;
+}
+
+.header-intro {
+    font-size: 20pt;
+    /* font-family: 'Sniglet', cursive; */
+    color: ivory;
+}
+
+.header-banner {
+    font-size: 110pt;
+    /* font-family: 'Sniglet', cursive; */
+    color: magenta;
+}
+
+.cursor-header {
+    color: #00ff22 !important; 
+}
+
+.quote-block {
+    font-family: 'Amatic SC', cursive;
+    color: ivory;
+    background-color: transparent;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.quote {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+
+.quote-caption {
+    text-align: right;
+}
+
+.blurbs-block {
+    color: white;
+    padding-bottom: 10%;
+}
+
+.blocks-wrapper {
+    width: 65%;
+    margin: 0 auto;
+
+}
+
+@media (min-width: 320px) {
+    .header-intro {
+        font-size: 10pt;
+    }
+
+    .header-banner {
+        font-size: 30pt;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-intro {
+        font-size: 10pt;
+    }
+
+    .header-banner {
+        font-size: 50pt;
+    }
+}
+
+@media (min-width: 992px) { 
+    .header-intro {
+        font-size: 15pt;
+    }
+
+    .header-banner {
+        font-size: 80pt;
+    }
+}
+
+.container {
+    min-width: 100%;
+}

@@ -1,8 +1,8 @@
 .rectangle {
-    position: relative;
-    width: Auto;
+    position: fixed;
+    width: 100vw;
     background-color: #ffffff;
-    
+    z-index: 100;
 }
 
 .web-header {
