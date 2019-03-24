@@ -54,6 +54,9 @@ class Home extends Component {
                         <ImageParallax reduceHeight={3/4} src={'/assets/LRG_DSC03663.jpeg'}/>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wACr6L5fvT4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                         <div className="quote-block">
                             <h3 className="quote">Hover over the Shaqtech logo to view the navigation!</h3>
                         </div>
