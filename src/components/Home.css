@@ -86,6 +86,16 @@
 
 }
 
+.youtube-check {
+    padding-bottom: 1%;
+    color: white;
+}
+
+.feature-video {
+    padding-top: 10%;
+    text-align: center;
+}
+
 @media (min-width: 320px) {
     .header-intro {
         font-size: 10pt;
