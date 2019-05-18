@@ -56,7 +56,7 @@ class Home extends Component {
                     <div className="feature-video">
                         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                             <h3 className="youtube-check">Check out the Shaqtech channel!</h3>
-                            <iframe width="80%" height="auto" src="https://www.youtube.com/embed/wACr6L5fvT4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/wACr6L5fvT4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </ScrollAnimation>
                     </div>
                     <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
