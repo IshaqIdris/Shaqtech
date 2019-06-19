@@ -10,6 +10,14 @@ export default class CustomNavbar extends Component {
                 <div className="rectangle">
                     <Image src="assets/weblogo.png" className="web-header"/>
                 </div>
+                <div className="navigation" >
+                    <ul>
+                        <li><a href="default.asp">Home</a></li>
+                        <li><a href="news.asp">News</a></li>
+                        <li><a href="contact.asp">Contact</a></li>
+                        <li><a href="about.asp">About</a></li>
+                    </ul>
+                </div>
             </div>
         );
     }
