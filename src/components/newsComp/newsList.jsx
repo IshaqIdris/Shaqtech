@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container} from 'react-bootstrap';
 import NewsSing from './newsSing';
+import {Link} from 'react-router-dom';
 import './newsList.css';
 
 const NewsList = ({projects}) => {
@@ -9,7 +10,9 @@ const NewsList = ({projects}) => {
             <Container>
                 {projects && projects.map(project => {
                     return (
-                        <NewsSing project={project} key={project.id} />
+                        <Link to={'/newsPage/' + project.id} >
+                            <NewsSing project={project} key={project.id} />
+                        </Link>
                     )
                 })}
             </Container>
