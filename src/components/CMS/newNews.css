@@ -1,0 +1,8 @@
+.new-news {
+    position: relative;;
+    top: 30px;
+}
+
+.new-news .container {
+    padding-top: 56px;
+}
