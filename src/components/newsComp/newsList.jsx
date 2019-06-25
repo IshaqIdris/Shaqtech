@@ -10,8 +10,8 @@ const NewsList = ({projects}) => {
             <Container>
                 {projects && projects.map(project => {
                     return (
-                        <Link to={'/newsPage/' + project.id} >
-                            <NewsSing project={project} key={project.id} />
+                        <Link to={'/newsPage/' + project.id} key={project.id}>
+                            <NewsSing project={project}  />
                         </Link>
                     )
                 })}
