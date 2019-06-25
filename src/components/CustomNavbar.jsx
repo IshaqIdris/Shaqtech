@@ -7,6 +7,8 @@ import './CustomNavbar.css';
 
 const CustomNavbar = (props) => {
     const {auth} = props;
+    const links = auth.uid ? <div><div className="newNewsNav"><li ><NavLink to="/create">New News</NavLink></li></div>
+    <div className="logoutNav"><li ><a onClick={props.signOut}>Logout</a></li></div></div> : <div className="contactNav"><li ><NavLink to="/signin">SignIn</NavLink></li></div>
     return (
         <div className="navigation__wrapper">
             <div className="rectangle">
@@ -16,10 +18,8 @@ const CustomNavbar = (props) => {
                 <ul>
                     <div className="projectsNav"><li ><NavLink to="/">Home</NavLink></li></div>
                     <div className="newsNav"><li ><NavLink to="/news">News</NavLink></li></div>
-                    <div className="contactNav"><li ><NavLink to="/signin">SignIn</NavLink></li></div>
                     <div className="aboutNav"><li ><NavLink to="/">About</NavLink></li></div>
-                    <div className="newNewsNav"><li ><NavLink to="/create">New News</NavLink></li></div>
-                    <div className="logoutNav"><li ><a onClick={props.signOut}>Logout</a></li></div>
+                    {links}
                 </ul>
             </div>
         </div>
@@ -33,9 +33,8 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
-
+        auth: state.firebase.auth
     };
 };
 
