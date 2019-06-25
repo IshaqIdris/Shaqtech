@@ -14,7 +14,7 @@ export default class CustomNavbar extends Component {
                     <ul>
                         <div className="projectsNav"><li ><NavLink to="/">Home</NavLink></li></div>
                         <div className="newsNav"><li ><NavLink to="/news">News</NavLink></li></div>
-                        <div className="contactNav"><li ><NavLink to="/">Contact</NavLink></li></div>
+                        <div className="contactNav"><li ><NavLink to="/signin">SignIn</NavLink></li></div>
                         <div className="aboutNav"><li ><NavLink to="/">About</NavLink></li></div>
                     </ul>
                 </div>
