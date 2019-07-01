@@ -1,18 +1,18 @@
 import React from 'react';
-import {Container, Card} from 'react-bootstrap';
+import {Card, br} from 'react-bootstrap';
+import moment from 'moment';
 
 const NewsSing = ({project}) => {
     return (
-        <Card bg="primary" className="news-sum">
+        <Card bg="dark" text="white" className="news-sum text-center">
             <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
-                <Card.Text>
-                    News Text
-                    Posted By ShaqTech
-                    4th February
-                </Card.Text>
             </Card.Body>
+            <Card.Footer>
+                <small className="text-muted">{moment(project.createdAt.toDate()).calendar()}</small>
+            </Card.Footer>
         </Card>
+        <br />
     );
 }
 

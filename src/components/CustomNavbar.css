@@ -12,10 +12,31 @@
     margin-left: auto; 
     margin-right: auto; 
 }
-.navigation {
+.table {
     position: absolute;
     z-index: 101;
 }
+
+ul#horizontal-list {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul#horizontal-list li {
+    float: left;
+    color: #da02f7;
+}
+
+ul#horizontal-list li a {
+    display: block;
+    color: #da02f7;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
 
 @media (min-width: 320px) {
     .rectangle {

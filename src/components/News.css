@@ -6,3 +6,8 @@
 .news .container {
     padding-top: 56px;
 }
+
+.news .container a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,8 +1,9 @@
 .new-news {
     position: relative;;
-    top: 30px;
+    top: 60px;
+    color: #ffffff;
 }
 
 .new-news .container {
-    padding-top: 56px;
+    padding: 100px;
 }

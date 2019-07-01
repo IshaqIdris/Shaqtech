@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, Image} from 'react-bootstrap';
+import React from 'react';
+import {Image} from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import {connect} from 'react-redux';
 import {signOut} from '../store/actions/authActions';
@@ -14,8 +14,8 @@ const CustomNavbar = (props) => {
             <div className="rectangle">
                 <Link to='/' className="logo"><Image src="assets/weblogo.png" className="web-header"/></Link>
             </div>
-            <div className="navigation">
-                <ul>
+            <div className="table">
+                <ul id="horizontal-list">
                     <div className="projectsNav"><li ><NavLink to="/">Home</NavLink></li></div>
                     <div className="newsNav"><li ><NavLink to="/news">News</NavLink></li></div>
                     <div className="aboutNav"><li ><NavLink to="/">About</NavLink></li></div>
