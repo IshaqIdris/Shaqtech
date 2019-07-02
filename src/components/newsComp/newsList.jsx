@@ -11,7 +11,7 @@ const NewsList = ({projects}) => {
                 <Row>
                 {projects && projects.map(project => {
                     return (
-                        <Col sm={12} md={4}>
+                        <Col sm={12} md={4} key={project.id}>
                             <Link to={'/newsPage/' + project.id} key={project.id}>
                                 <NewsSing project={project}  />
                             </Link>

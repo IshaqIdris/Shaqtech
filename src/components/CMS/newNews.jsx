@@ -36,7 +36,7 @@ class NewNews extends Component {
                         </Form.Group>
 
                         <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Content</Form.Label>
+                            <Form.Label>Content (Markdown)</Form.Label>
                             <Form.Control as="textarea" id='content' onChange={this.handleChange} />
                         </Form.Group>
 

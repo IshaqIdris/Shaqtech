@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {firestoreConnect} from 'react-redux-firebase';
 import {compose} from 'redux';
 import moment from 'moment';
+import MDReactComponent from 'markdown-react-js';
 import './newsPage.css';
 
 const newsPage = (props) => {
@@ -19,7 +20,7 @@ const newsPage = (props) => {
                         <Card.Body>
                             <Card.Title>{project.title}</Card.Title>
                             {featureImage}
-                            <Card.Text>{project.content}</Card.Text>
+                            <Card.Text><MDReactComponent text={project.content} /></Card.Text>
                             {youtube}
                             <Card.Text> <small className="text-muted">{project.author}</small></Card.Text>
                             <Card.Footer>
