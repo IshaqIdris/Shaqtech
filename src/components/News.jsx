@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-import Notifications from './newsComp/notifications';
 import NewsList from './newsComp/newsList';
 import {connect} from 'react-redux';
 import {firestoreConnect} from 'react-redux-firebase';
 import {compose} from 'redux';
+import { TwitterTimelineEmbed} from 'react-twitter-embed';
 import './News.css';
 
 class News extends Component {
@@ -13,7 +13,20 @@ class News extends Component {
         return (
             <div className="news">
                 <Container>
-                    <NewsList projects={projects} />
+                    <Row>
+                        <Col sm={12} md={9}>
+                            <NewsList projects={projects} />
+                        </Col>
+                        <Col sm={12} md={3}>
+                            <div className="twitter">
+                                <TwitterTimelineEmbed
+                                sourceType="profile"
+                                screenName="sharkyferrari"
+                                options={{height: 800}}
+                                />
+                            </div>
+                        </Col>
+                    </Row>
                 </Container>               
             </div>
         );

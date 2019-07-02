@@ -11,7 +11,7 @@ const newsPage = (props) => {
     const {project} = props;
     if (project) {
         const featureImage = project.featureImage ? <Card.Img src={project.featureImage} /> : <div></div>
-        const youtube = project.youtube ? <div><ResponsiveEmbed aspectRatio="16by9"><iframe title="vid" src="https://www.youtube.com/embed/okSt1S7oamM" allowfullscreen></iframe></ResponsiveEmbed></div> : <div></div>
+        const youtube = project.youtube ? <div><ResponsiveEmbed aspectRatio="16by9"><iframe src={project.youtube}></iframe></ResponsiveEmbed></div> : <div></div>
     
         return(
             <div className="news-page">
@@ -20,7 +20,7 @@ const newsPage = (props) => {
                         <Card.Body>
                             <Card.Title>{project.title}</Card.Title>
                             {featureImage}
-                            <Card.Text><MDReactComponent text={project.content} /></Card.Text>
+                            <MDReactComponent text={project.content} />
                             {youtube}
                             <Card.Text> <small className="text-muted">{project.author}</small></Card.Text>
                             <Card.Footer>
