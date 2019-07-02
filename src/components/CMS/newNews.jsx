@@ -8,7 +8,9 @@ import './newNews.css';
 class NewNews extends Component {
     state = {
         title: '',
-        content: ''
+        content: '',
+        featureImage: '',
+        youtube:''
     }
     handleChange = (e) => {
         this.setState({
@@ -37,6 +39,17 @@ class NewNews extends Component {
                             <Form.Label>Content</Form.Label>
                             <Form.Control as="textarea" id='content' onChange={this.handleChange} />
                         </Form.Group>
+
+                        <Form.Group controlId="formFeatureImage">
+                            <Form.Label>Feature Image</Form.Label>
+                            <Form.Control id='featureImage' placeholder="https://firebasestorage.googleapis.com/....png" onChange={this.handleChange}/>
+                        </Form.Group>
+
+                        <Form.Group controlId="formYoutube">
+                            <Form.Label>YouTube Video</Form.Label>
+                            <Form.Control id='youtube' placeholder="https://www.youtube.com/..." onChange={this.handleChange} />
+                        </Form.Group>
+
                         <Button variant="primary" type="submit">
                             Create
                         </Button>

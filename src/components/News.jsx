@@ -13,14 +13,7 @@ class News extends Component {
         return (
             <div className="news">
                 <Container>
-                    <Row>
-                        <Col sm={12} md={6}>
-                            <NewsList projects={projects} />
-                        </Col>
-                        <Col sm={12} md={{span:5, offset:1}}>
-                            <Notifications />
-                        </Col>
-                    </Row>
+                    <NewsList projects={projects} />
                 </Container>               
             </div>
         );
