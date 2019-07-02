@@ -12,7 +12,9 @@ const newsPage = (props) => {
     if (project) {
         const featureImage = project.featureImage ? <Card.Img src={project.featureImage} /> : <div></div>
         const youtube = project.youtube ? <div><ResponsiveEmbed aspectRatio="16by9"><iframe src={project.youtube}></iframe></ResponsiveEmbed></div> : <div></div>
-    
+        const github = project.github ? <Card.Text> <a href={project.github}> Click here to view Github Repo!</a></Card.Text> : <div></div>
+        const behance = project.behance ? <Card.Link href={project.behance}> Click here to view Behance Project!</Card.Link> : <div></div>
+        
         return(
             <div className="news-page">
                 <Container>
@@ -20,9 +22,15 @@ const newsPage = (props) => {
                         <Card.Body>
                             <Card.Title>{project.title}</Card.Title>
                             {featureImage}
+                            <br />
+                            <br />
                             <MDReactComponent text={project.content} />
+                            {github}
+                            {behance}
+                            <br />
                             {youtube}
-                            <Card.Text> <small className="text-muted">{project.author}</small></Card.Text>
+                            <br /> 
+                            <Card.Text> <small className="text-muted">Posted by {project.author}</small></Card.Text>
                             <Card.Footer>
                                 <small className="text-muted">{moment(project.createdAt.toDate()).calendar()}</small>
                             </Card.Footer>

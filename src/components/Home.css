@@ -96,6 +96,11 @@
     text-align: center;
 }
 
+.youtube-section {
+    width : 500px;
+    margin: 0 auto;
+}
+
 @media (min-width: 320px) {
     .header-intro {
         font-size: 10pt;
@@ -103,6 +108,11 @@
 
     .header-banner {
         font-size: 30pt;
+    }
+
+    .youtube-section {
+        width : 100%;
+        margin: 0 auto;
     }
 }
 
@@ -114,6 +124,11 @@
     .header-banner {
         font-size: 50pt;
     }
+
+    .youtube-section {
+        width : 500px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 992px) { 
@@ -123,6 +138,11 @@
 
     .header-banner {
         font-size: 80pt;
+    }
+
+    .youtube-section {
+        width : 500px;
+        margin: 0 auto;
     }
 }
 

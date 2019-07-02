@@ -37,6 +37,15 @@ ul#horizontal-list li a {
     text-decoration: none;
 }
 
+.logoutNav {
+    right:0;
+    position: absolute;
+}
+
+.signInNav {
+    right:0;
+    position: absolute;
+}
 
 @media (min-width: 320px) {
     .rectangle {

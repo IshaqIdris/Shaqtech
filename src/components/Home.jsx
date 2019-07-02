@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Jumbotron, Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { Container, Row, Col, ResponsiveEmbed} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Typing from 'react-typing-animation';
 import ImageParallax from 'react-image-parallax2';
@@ -51,12 +50,16 @@ class Home extends Component {
                         </ScrollAnimation>
                     </div>
                     <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                        <ImageParallax reduceHeight={3/4} src={'/assets/LRG_DSC03663.jpeg'}/>
+                        <ImageParallax reduceHeight={1/2} src={'/assets/LRG_DSC03663.jpeg'}/>
                     </ScrollAnimation>
                     <div className="feature-video">
                         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                             <h3 className="youtube-check">Check out the Shaqtech channel!</h3>
-                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/wACr6L5fvT4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <div className="youtube-section" >
+                                <ResponsiveEmbed aspectRatio="16by9">
+                                    <iframe width="100%" src="https://www.youtube.com/embed/wACr6L5fvT4"></iframe>
+                                </ResponsiveEmbed>
+                            </div>
                         </ScrollAnimation>
                     </div>
                     <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">

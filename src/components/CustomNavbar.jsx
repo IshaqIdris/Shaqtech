@@ -8,7 +8,7 @@ import './CustomNavbar.css';
 const CustomNavbar = (props) => {
     const {auth} = props;
     const links = auth.uid ? <div><div className="newNewsNav"><li ><NavLink to="/create">Create News</NavLink></li></div>
-    <div className="logoutNav"><li ><a onClick={props.signOut}>Logout</a></li></div></div> : <div className="contactNav"><li ><NavLink to="/signin">SignIn</NavLink></li></div>
+    <div className="logoutNav"><li ><a onClick={props.signOut}>Logout</a></li></div></div> : <div className="signInNav"><li ><NavLink to="/signin">SignIn</NavLink></li></div>
     return (
         <div className="navigation__wrapper">
             <div className="rectangle">

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Form, Button, Container} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import {createProject} from '../../store/actions/projectActions';
-import {Redirect} from 'react-router-dom';
+import {Redirect, Link} from 'react-router-dom';
 import './newNews.css';
 
 class NewNews extends Component {
@@ -10,7 +10,9 @@ class NewNews extends Component {
         title: '',
         content: '',
         featureImage: '',
-        youtube:''
+        youtube:'',
+        github:'',
+        behance:''
     }
     handleChange = (e) => {
         this.setState({
@@ -50,9 +52,21 @@ class NewNews extends Component {
                             <Form.Control id='youtube' placeholder="https://www.youtube.com/..." onChange={this.handleChange} />
                         </Form.Group>
 
-                        <Button variant="primary" type="submit">
-                            Create
-                        </Button>
+                        <Form.Group controlId="formGithub">
+                            <Form.Label>GitHub Link</Form.Label>
+                            <Form.Control id='github' onChange={this.handleChange} />
+                        </Form.Group>
+
+                        <Form.Group controlId="formBehance">
+                            <Form.Label>Behance Link</Form.Label>
+                            <Form.Control id='behance' onChange={this.handleChange} />
+                        </Form.Group>
+
+                        <Link to='/news'>
+                            <Button variant="primary" type="submit">
+                                Create
+                            </Button>
+                        </Link>
                     </Form>
                 </Container>
             </div>
