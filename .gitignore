@@ -22,8 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
-# src/*
+#comment src when dev
+src/* 
 public/*
 build/static/css/*.map
 build/static/js/*.map
