@@ -1,26 +1,31 @@
 import React from 'react';
-import {Image} from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import {Image, Navbar, Nav} from 'react-bootstrap';
+import { Link, NavLink} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {signOut} from '../store/actions/authActions';
 import './CustomNavbar.css';
 
 const CustomNavbar = (props) => {
     const {auth} = props;
-    const links = auth.uid ? <div><div className="newNewsNav"><li ><NavLink to="/create">Create News</NavLink></li></div>
-    <div className="logoutNav"><li ><a onClick={props.signOut}>Logout</a></li></div></div> : <div className="signInNav"><li ><NavLink to="/signin">SignIn</NavLink></li></div>
+    const links = auth.uid ? <div><Nav><Nav.Link href="/create">Create News</Nav.Link>
+    <Nav.Link href="/signin" onClick={props.signOut}>Logout</Nav.Link></Nav></div> : <div><Nav><Nav.Link href="/signin">Sign In</Nav.Link></Nav></div>
     return (
         <div className="navigation__wrapper">
             <div className="rectangle">
                 <Link to='/' className="logo"><Image src="assets/weblogo.png" className="web-header"/></Link>
             </div>
             <div className="table">
-                <ul id="horizontal-list">
-                    <div className="projectsNav"><li ><NavLink to="/">Home</NavLink></li></div>
-                    <div className="newsNav"><li ><NavLink to="/news">News</NavLink></li></div>
-                    <div className="aboutNav"><li ><NavLink to="/">About</NavLink></li></div>
-                    {links}
-                </ul>
+                <Navbar expand="md">
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="/news">News</Nav.Link>
+                            <Nav.Link href="/">About</Nav.Link>
+                        </Nav>
+                        {links}
+                    </Navbar.Collapse>
+                </Navbar>
             </div>
         </div>
     );

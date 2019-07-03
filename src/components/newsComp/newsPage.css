@@ -1,6 +1,7 @@
 .news-page {
     position: relative;;
     top: 100px;
+    padding-bottom: 120px;
 }
 
 .news-page .container {

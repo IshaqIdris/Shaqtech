@@ -1,6 +1,11 @@
 .SignIn {
     position: relative;
-    top: 30px;
+    top: 100px;
+    padding-bottom: 150px;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    
 }
 
 .SignIn .container {

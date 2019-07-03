@@ -23,7 +23,6 @@ const newsPage = (props) => {
                             <Card.Title>{project.title}</Card.Title>
                             {featureImage}
                             <br />
-                            <br />
                             <MDReactComponent text={project.content} />
                             {github}
                             {behance}
@@ -32,7 +31,7 @@ const newsPage = (props) => {
                             <br /> 
                             <Card.Text> <small className="text-muted">Posted by {project.author}</small></Card.Text>
                             <Card.Footer>
-                                <small className="text-muted">{moment(project.createdAt.toDate()).calendar()}</small>
+                                <small className="text-muted">Published {moment(project.createdAt.toDate()).calendar()}</small>
                             </Card.Footer>
                         </Card.Body>
                     </Card>
