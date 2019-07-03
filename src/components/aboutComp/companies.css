@@ -1,0 +1,13 @@
+.logo-companies {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.companies-title {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    font-weight: lighter;
+}
