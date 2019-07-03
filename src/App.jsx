@@ -23,6 +23,7 @@ class App extends Component {
             <Route path='/signin' component={SignIn} />
             <Route path='/create' component={NewNews} />
           </Switch>
+          <Footer />
       </Router>
     );
   }

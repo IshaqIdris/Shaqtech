@@ -7,3 +7,8 @@
 .new-news .container {
     padding: 100px;
 }
+
+.create-butt {
+    color: #ffffff;
+    text-decoration: none;
+}

@@ -6,6 +6,10 @@
   },
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "animate.css": "^3.7.2",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
@@ -23,6 +27,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-scroll-parallax": "^2.1.2",
+    "react-text-truncate": "^0.14.1",
     "react-twitter-embed": "^2.0.8",
     "react-typing-animation": "^1.6.2",
     "react-typing-effect": "^2.0.2",
@@ -34,7 +39,7 @@
     "yarn-upgrade-all": "^0.5.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

@@ -22,6 +22,7 @@ class NewNews extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.createProject(this.state)
+        this.props.history.push('/news');
     }
     render() {
         const {auth} = this.props;
@@ -62,11 +63,10 @@ class NewNews extends Component {
                             <Form.Control id='behance' onChange={this.handleChange} />
                         </Form.Group>
 
-                        <Link to='/news'>
+                        
                             <Button variant="primary" type="submit">
                                 Create
                             </Button>
-                        </Link>
                     </Form>
                 </Container>
             </div>

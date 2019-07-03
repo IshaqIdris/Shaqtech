@@ -1,5 +1,56 @@
 .footer {
-    height: 200px;
-    background-color: blueviolet;
+    background-color: rgb(20, 0, 39);
     min-width: 100vw;
+    color: white;
+    padding: 30px;
+}
+
+.footer-quote-text {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer-social {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.footer-attri {
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    color: darkgray;
+    font-size: small;
+}
+
+.footer-follow {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.footer-social {
+    padding: 0 7px 10px 7px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .footer-quote {
+        border-right: 1px;
+        border-right-style: solid;
+        border-right-color: darkgrey;
+    }
+
+    .footer-follow {
+        padding-left: 7px; 
+        margin: 0;
+    }
+
+    .footer-quote-text {
+        text-align: right;
+        padding-right: 18px;
+    }
+
+    .footer-social {
+        margin: 0;
+    }
 }

@@ -11,3 +11,12 @@
     color: white;
     text-decoration: none;
 }
+
+.news-head-main {
+    margin: 0 auto;
+    padding-top: 56px;
+}
+
+.news-head {
+    margin: 0 auto;
+}

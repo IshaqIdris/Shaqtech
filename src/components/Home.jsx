@@ -50,7 +50,7 @@ class Home extends Component {
                         </ScrollAnimation>
                     </div>
                     <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                        <ImageParallax reduceHeight={1/2} src={'/assets/LRG_DSC03663.jpeg'}/>
+                        <ImageParallax reduceHeight={3/4} src={'/assets/LRG_DSC03663.jpeg'}/>
                     </ScrollAnimation>
                     <div className="feature-video">
                         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
@@ -64,7 +64,7 @@ class Home extends Component {
                     </div>
                     <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                         <div className="quote-block">
-                            <h3 className="quote">Hover over the Shaqtech logo to view the navigation!</h3>
+                            <h3 className="quote">Click news in the navbar to see what we've been up to!</h3>
                         </div>
                     </ScrollAnimation>
                 </Container>

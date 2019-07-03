@@ -7,7 +7,7 @@ const NewsSing = ({project}) => {
     const featureImage = project.featureImage ? <Card.Img variant="top" src={project.featureImage} /> : <div></div>
     return (
         <div>
-            <Card bg="light" text="dark" className="news-sum text-center">
+            <Card bg="light" text="dark" className="news-sum">
                 {featureImage}
                 <Card.Body>
                     <Card.Title>{project.title}</Card.Title>

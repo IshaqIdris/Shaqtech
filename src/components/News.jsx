@@ -14,6 +14,12 @@ class News extends Component {
             <div className="news">
                 <Container>
                     <Row>
+                        <h1 class="display-3 news-head-main text-light">Shaq News</h1>
+                    </Row>
+                    <Row>
+                        <p class="lead news-head  text-light">Look what we're up to!</p>
+                    </Row>
+                    <Row>
                         <Col sm={12} md={9}>
                             <NewsList projects={projects} />
                         </Col>
